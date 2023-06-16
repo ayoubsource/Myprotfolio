@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            flex-grow: 1;
+        }
+        
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .profile-description {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        .skills {
+            margin-bottom: 20px;
+        }
+        
+        .skills h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        
+        .skills-list li {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #f2f2f2;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="profile-image.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2 class="profile-name">John Doe</h2>
+                <p class="profile-description">Web Developer</p>
+            </div>
+        </div>
+        
+        <div class="skills">
+            <h2>Projects</h2>
+            <ul class="skills-list">
+                <li><a href="/Projects/Details/1">.NET project</li>
+                <li>FrontEnd project</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2023 My Portfolio
+    </footer>
+</body>
+</html>
