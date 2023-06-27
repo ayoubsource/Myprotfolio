@@ -1,6 +1,6 @@
 ﻿namespace myProtfolio.Models
 {
-    internal class Project
+    public class Project
     {
         public int Id { get; internal set; }
         public string Name { get; internal set; }
